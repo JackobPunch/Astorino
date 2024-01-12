@@ -1,0 +1,43 @@
+.PROGRAM ROZKLAD
+;-------------- Init ---------
+deltaX = 80 ;distance between workpieces X
+deltaY = 80 ;distance between workpieces Y
+deltaZ = 30 ;layer height
+numPcs = 5;pieces count
+height = 25 ;height of a workpiece (25 mm)
+;-------------- variable init ---------
+x = 1
+y = 0
+z = 0
+SIGNAL -1
+speed 100 mm/s always
+POINT place = P29
+POINT pick = P28
+POINT pick = SHIFT(P28 BY 0,0,numPcs*height+10) 
+;P1 on the table, pick shifted by number of pieces in Z
+HOME
+LAPPRO pick, 40
+;----------------------------------- Pal-----------------
+FOR X = 0 TO (numPcs-1)
+ POINT pick = SHIFT(pick BY 0,0,-height);calc new pick pose
+ JAPPRO pick,40
+ speed 20 mm/s
+ LMOVE pick
+ TWAIT 0.5
+ SIGNAL 1 ;close the gripper
+ TWAIT 0.5
+ LDEPART 50
+ LMOVE P30
+ POINT place
+ POINT place = SHIFT(place BY deltax*x,deltay*y,deltaz*z)
+ LAPPRO place,30
+ speed 20 mm/s
+ LMOVE place
+ TWAIT 0.5
+ SIGNAL -1 ;open the gripper
+ TWAIT 0.5
+ LDEPART 30
+ LMOVE P30
+END
+.END
+

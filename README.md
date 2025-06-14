@@ -9,7 +9,7 @@ This repository contains selected materials from training sessions I participate
 A simple program simulating the disassembly of a block stack, developed during a Kawasaki Robotics training session. The animated GIF below is more of a lighthearted reminder of the sessions than a direct representation of the implemented logic.
 
 <div align="center">
-   <img src="https://github.com/JackobPunch/Astorino/blob/main/220825410972633.gif" alt="Astorino GIF" />
+   <img src="https://github.com/JackobPunch/Astorino/blob/main/Astorino/220825410972633.gif" alt="Astorino GIF" />
 </div>
 
 ---
@@ -23,7 +23,7 @@ This Cscape project was created as part of a broader **Horner OCS training cours
 - Basic visual interface elements for Horner OCS devices
 
 <div align="center">
-   <img src="https://github.com/JackobPunch/HornerAPG/blob/main/VID20230830140938.gif" alt="Horner APG Demo GIF" />
+   <img src="https://github.com/JackobPunch/Astorino/blob/main/Astorino/VID20230830140938.gif" alt="Horner APG Demo GIF" />
 </div>
 
 ---

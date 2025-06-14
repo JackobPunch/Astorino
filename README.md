@@ -23,7 +23,7 @@ This Cscape project was created as part of a broader **Horner OCS training cours
 - Basic visual interface elements for Horner OCS devices
 
 <div align="center">
-   <img src="https://github.com/JackobPunch/Astorino/blob/main/Astorino/VID20230830140938.gif" alt="Horner APG Demo GIF" />
+   <img src="https://github.com/JackobPunch/Astorino/blob/main/HornerAPG/VID20230830140938.gif" alt="Horner APG Demo GIF" />
 </div>
 
 ---
